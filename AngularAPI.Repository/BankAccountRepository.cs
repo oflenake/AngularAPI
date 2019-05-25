@@ -24,9 +24,6 @@ namespace AngularAPI.Repository
         // Get all BankAccounts
         public async Task<IEnumerable<BankAccount>> GetAllAsyncData()
         {
-            LoggerService.Log.Instance.Debug("[BankAccountRepository] 'GetAllAsyncData' method getting " +
-                                             "all bank accounts asynchronously.");
-
             return await GetAllBaseData()
                 .OrderBy(b => b.AccountName)
                 .ToListAsync();

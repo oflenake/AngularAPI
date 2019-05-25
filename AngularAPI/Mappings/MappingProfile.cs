@@ -29,7 +29,7 @@ namespace AngularAPI.Mappings
 
             CreateMap<BankAccount, BankAccount>()
                 .ForMember(dest => dest.BankAccountNumber, opt => opt.MapFrom(src => src.BankAccountNumber))
-                .ForMember(dest => dest.UserID, opt => opt.MapFrom(src => src.UserID))
+                .ForMember(dest => dest.ID, opt => opt.MapFrom(src => src.ID))
                 .ForMember(dest => dest.CreatedDateTime, opt => opt.MapFrom(src => src.CreatedDateTime))
                 .ForMember(dest => dest.ClientNumber, opt => opt.MapFrom(src => src.ClientNumber))
                 .ForMember(dest => dest.AccountName, opt => opt.MapFrom(src => src.AccountName))

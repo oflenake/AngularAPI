@@ -1,0 +1,44 @@
+
+2019/05/23 19:43:34
+------------------------------------------------------------------------------------------------
+Controller Name :- Employees
+Action Method Name :- GetAllEmployeesAsync
+------------------------------------------------------------------------------------------------
+Microsoft.AspNetCore.Mvc.Filters.ExceptionContext
+Message ---
+{0}Unable to resolve service for type 'AngularAPI.Contracts.ILoggerManager' while attempting to activate 'AngularAPI.Controllers.EmployeesController'.
+Source ---
+{0}Microsoft.Extensions.DependencyInjection.Abstractions
+StackTrace ---
+{0}   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+TargetSite ---
+{0}System.Object GetService(System.IServiceProvider, System.Type, System.Type, Boolean)
+
+
+2019/05/23 19:49:31
+------------------------------------------------------------------------------------------------
+Controller Name :- Employees
+Action Method Name :- GetAllEmployeesAsync
+------------------------------------------------------------------------------------------------
+Microsoft.AspNetCore.Mvc.Filters.ExceptionContext
+Message ---
+{0}Unable to resolve service for type 'AngularAPI.Contracts.ILoggerManager' while attempting to activate 'AngularAPI.Controllers.EmployeesController'.
+Source ---
+{0}Microsoft.Extensions.DependencyInjection.Abstractions
+StackTrace ---
+{0}   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+TargetSite ---
+{0}System.Object GetService(System.IServiceProvider, System.Type, System.Type, Boolean)
+

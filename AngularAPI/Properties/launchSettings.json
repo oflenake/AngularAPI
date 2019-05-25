@@ -11,14 +11,14 @@
   "profiles": {
     "IIS Express": {
       "commandName": "IISExpress",
-      "launchBrowser": false,
+      "launchBrowser": true,
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
     "AngularAPI": {
       "commandName": "Project",
-      "launchBrowser": false,
+      "launchBrowser": true,
       "applicationUrl": "https://localhost:64355;http://localhost:64354",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"

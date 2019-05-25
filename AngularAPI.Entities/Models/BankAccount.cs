@@ -7,7 +7,7 @@ namespace AngularAPI.Entities.Models
     {
         [Key]
         public int BankAccountNumber { get; set; }
-        public int UserID { get; set; }
+        public int ID { get; set; }
         public DateTime CreatedDateTime { get; set; }
         public int ClientNumber { get; set; }
         public string AccountName { get; set; }

@@ -21,6 +21,11 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="NLog.Web.AspNetCore" Version="4.8.2" />
+    <PackageReference Include="NLog" Version="4.6.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="4.0.1" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="5.4.0" />
+    <PackageReference Include="System.Linq.Dynamic.Core" Version="1.0.8.8" />
     <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="5.4.0" />
   </ItemGroup>
 
@@ -30,13 +35,20 @@
   </ItemGroup>
   
   <ItemGroup>
+    <ProjectReference Include="..\AngularAPI.Entities\AngularAPI.Entities.csproj" />
     <ProjectReference Include="..\AngularAPI.LoggerService\AngularAPI.LoggerService.csproj" />
     <ProjectReference Include="..\AngularAPI.Repository\AngularAPI.Repository.csproj" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Content Update="nlog.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>
     <None Update="NLog.xsd">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </None>
   </ItemGroup>
 

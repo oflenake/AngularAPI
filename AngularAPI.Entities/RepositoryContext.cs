@@ -14,18 +14,11 @@ namespace AngularAPI.Entities
     /// </summary>
     public class RepositoryContext : DbContext
     {
-        #region Fields
-        private string _component;
-        private string _process;
-        private string _message;
-        #endregion
 
         #region Constructor
         /// <summary>
         /// Inject the logger and repository parameter services inside the constructor.
         /// </summary>
-        /// <param name="logger"></param>
-        /// <param name="repowrap"></param>
         public RepositoryContext(DbContextOptions<RepositoryContext> options)
             : base(options)
         {

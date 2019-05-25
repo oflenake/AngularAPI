@@ -10,7 +10,7 @@ namespace AngularAPI.Entities.Extensions
     {
         public static void Map(this BankAccount dbBankAccount, BankAccount bankaccount)
         {
-            dbBankAccount.UserID = bankaccount.UserID;
+            dbBankAccount.ID = bankaccount.ID;
             dbBankAccount.CreatedDateTime = bankaccount.CreatedDateTime;
             dbBankAccount.ClientNumber = bankaccount.ClientNumber;
             dbBankAccount.AccountName = bankaccount.AccountName;
